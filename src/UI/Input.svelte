@@ -40,6 +40,11 @@
     width: 100%;
     margin: 0.25rem 0;
   }
+
+  .form-control label {
+    padding-left: 1rem;
+  } 
+
 </style>
 
 <div class="form-control">

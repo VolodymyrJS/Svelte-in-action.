@@ -13,7 +13,7 @@
     border-radius: 5px;
     background: white;
     margin: 1rem;
-        box-shadow:
+    box-shadow:
     0 1px 4px rgba(0, 0, 0, .3),
     -23px 0 20px -23px rgba(0, 0, 0, .8),
     23px 0 20px -23px rgba(0, 0, 0, .8),
