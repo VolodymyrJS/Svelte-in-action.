@@ -2,6 +2,7 @@
   import Header from "./UI/Header.svelte";
   import MeetupGrid from "./Meetups/MeetupGrid.svelte";
   import Input from './UI/Input.svelte';
+  import Button from './UI/Button.svelte';
 
   let meetups = [
     {
@@ -78,10 +79,6 @@
 
   .row {
     margin: 0;
-  }
-
-  .add-meetup-btn {
-    width: 100%;
   }
 
   .form {
@@ -172,7 +169,7 @@
         </div>
         <div class="row">
           <div class="col-xs-2 col-xs-offset-5">
-            <button class="add-meetup-btn" type="submit">Add meetup</button>
+            <Button type="submit" capture="Add meetup" />
           </div>
         </div>
       </form>
