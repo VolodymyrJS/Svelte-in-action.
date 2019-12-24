@@ -56,10 +56,20 @@
   }
 
   .learning-to-code img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    border-bottom: 5px solid lightskyblue;
+    box-shadow: 0 8px 6px -6px black;
   }
+
+  .learning-to-code img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
 
   .col-xs-12 {
     padding: 0;
@@ -74,21 +84,52 @@
     width: 100%;
   }
 
+  .form {
+    margin-top: 15px;
+  }
+
 </style>
 
 <Header />
 
 <main>
   <div class="row">
-    <div class="col-xs-12 learning-to-code">
-      <img src="https://d3jh33bzyw1wep.cloudfront.net/s3/W1siZiIsIjIwMTkvMDYvMDUvMTMvMjEvMTYvOTE0L1VudGl0bGVkIGRlc2lnbi5wbmciXSxbInAiLCJ0aHVtYiIsIjIwMDB4NTAwXHUwMDNjIl1d" alt="add-meetup">
+    <div class="col-xs-1 col-xs-offset-1 learning-to-code">
+      <img src="images/c++.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/cs.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/css.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/html.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/java.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/js.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/php.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/python.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/ruby.png" alt="add-meetup">
+    </div>
+    <div class="col-xs-1 learning-to-code">
+      <img src="images/stack-overflow.png" alt="add-meetup">
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
       <form class="form" on:submit|preventDefault={addMeetup}>
         <div class="row">
-          <div class="col-xs-5 col-xs-offset-1">
+          <div class="col-xs-4 col-xs-offset-2">
             <Input 
               id="title"
               label="Title"
@@ -108,7 +149,7 @@
               value={address}
               on:input={event => (address = event.target.value)} />
           </div>
-          <div class="col-xs-5">
+          <div class="col-xs-4">
             <Input
               id="imageUrl"
               label="Image URL"

@@ -16,23 +16,36 @@
     width: 100%;
     font: inherit;
     border: none;
-    border-bottom: 2px solid #ccc;
+    border: 2px solid transparent;
+    border-bottom: 4px solid transparent;
     border-radius: 3px 3px 0 0;
     background: white;
     padding: 0.15rem 0.25rem;
     transition: border-color 0.1s ease-out;
+    padding: 10px 15px;
+    box-shadow: 0 8px 6px -6px #555;
+    border-radius: 4px;
+    color: lightslategrey;
+    font-weight: 600;
+    font-style: italic;
   }
 
   input:focus,
   textarea:focus {
-    border-color: #e40763;
+    border-color: lightskyblue;
     outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+    border-bottom: 4px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 8px 6px -6px black;
   }
 
   label {
     display: block;
     margin-bottom: 0.5rem;
     width: 100%;
+    color: rgba(81, 203, 238, 1);
+    font-weight: 600;
   }
 
   .form-control {
