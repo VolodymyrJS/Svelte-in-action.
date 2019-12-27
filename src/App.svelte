@@ -130,19 +130,16 @@
             <Input 
               id="title"
               label="Title"
-              type="text"
               value={title}
             on:input={event => (title = event.target.value)} />
             <Input
               id="subtitle"
               label="Subtitle"
-              type="text"
               value={subtitle}
               on:input={event => (subtitle = event.target.value)} />
             <Input
               id="address"
               label="Address"
-              type="text"
               value={address}
               on:input={event => (address = event.target.value)} />
           </div>
@@ -150,7 +147,6 @@
             <Input
               id="imageUrl"
               label="Image URL"
-              type="text"
               value={imageUrl}
             on:input={event => (imageUrl = event.target.value)} />
             <Input
@@ -169,7 +165,7 @@
         </div>
         <div class="row">
           <div class="col-xs-2 col-xs-offset-5">
-            <Button type="submit" capture="Add meetup" />
+            <Button type="submit" caption="Add meetup" />
           </div>
         </div>
       </form>

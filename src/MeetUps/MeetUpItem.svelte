@@ -95,13 +95,13 @@
   <footer>
     <div class="row">
       <div class="col-xs-4">
-        <Button mode="meetup-item" type="button" capture="Show Details" />
+        <Button mode="meetup-item" type="button" caption="Show Details" />
       </div>
       <div class="col-xs-4">
-        <Button mode="meetup-item" type="button" capture="Favourite" />
+        <Button mode="meetup-item" type="button" caption="Favourite" />
       </div>
       <div class="col-xs-4">
-        <Button mode="meetup-mail-item" href="mailto:{email}" capture="Contact" />
+        <Button mode="meetup-mail-item" href="mailto:{email}" caption="Contact" />
       </div>
     </div>
   </footer>
