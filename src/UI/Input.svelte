@@ -40,6 +40,15 @@
     box-shadow: 0 8px 6px -6px black;
   }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: lightslategrey;
+}
+
   label {
     display: block;
     margin-bottom: 0.5rem;

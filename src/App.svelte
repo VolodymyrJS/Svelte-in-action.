@@ -61,14 +61,14 @@
     width: 60px;
     height: 60px;
     -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
     border-bottom: 5px solid lightskyblue;
     box-shadow: 0 8px 6px -6px black;
   }
 
   .learning-to-code img:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
 
 
